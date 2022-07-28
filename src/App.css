@@ -10,8 +10,18 @@
   align-items: center;
 }
 .search-header{
-  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 70%;
+}
+@media only screen and (max-width: 851px) {
+  .search-header{
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 70%;
+  }
 }
 .search-bar{
   min-width: 50%;
