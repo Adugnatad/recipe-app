@@ -37,6 +37,7 @@ function App() {
         <input
           type="text"
           className="search-bar"
+          placeholder="Search Your Favourite Recipes"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
