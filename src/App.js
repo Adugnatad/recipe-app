@@ -16,9 +16,14 @@ function App() {
   }, [query]);
 
   const getRecipe = async () => {
-    const Response = await fetch(exampleReq);
-    const data = await Response.json();
-    setRecipes(data.hits);
+
+    await fetch(exampleReq)
+    .then((response) =>response.json())
+    .then((json) => {
+      const data = json;
+      setRecipes(data.hits);
+    })
+    
   };
 
   const getSearch = (e) => {
