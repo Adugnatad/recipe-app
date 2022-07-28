@@ -1,0 +1,17 @@
+.recipe {
+    background: linear-gradient(90deg, rgba(165,200,253,1) 0%, rgba(255,255,255,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+@media only screen and (max-width: 851px) {
+    .recipe {
+      grid-template-columns: 1fr;
+    }
+  }
+.recipeshadow {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px;
+    box-shadow: 0px 5px 20px rgba(122, 122, 122, 0.985);
+}
