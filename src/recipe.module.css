@@ -4,9 +4,17 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
 }
+.foodImage{
+  height: 300px;
+  width: 300px;
+}
 @media only screen and (max-width: 851px) {
     .recipe {
       grid-template-columns: 1fr;
+    }
+    .foodImage{
+      height: 250px;
+      width: 250px;
     }
   }
 .recipeshadow {

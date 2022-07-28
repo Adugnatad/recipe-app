@@ -4,7 +4,7 @@ const Recipe = ({Title, Calories, image, ingredients}) => {
     return (
         <div className={style.recipeshadow}>
         <h1>{Title}</h1>
-        <img src={image} alt="recipe-image" />
+        <img className={style.foodImage} src={image} alt="recipe-image" />
         <ul>
             {
                 ingredients.map((ingredient,index) => (
